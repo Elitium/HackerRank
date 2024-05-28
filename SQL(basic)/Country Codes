@@ -1,0 +1,9 @@
+/*
+Enter your query below.
+Please append a semicolon ";" at the end of the query
+*/
+
+SELECT customer_id, name,  CONCAT("+", country_code, phone_number)
+FROM customers as c, country_codes as cc
+WHERE c.country = cc.country
+ORDER BY customer_id ASC;
