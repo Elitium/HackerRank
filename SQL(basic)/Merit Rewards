@@ -1,0 +1,8 @@
+/*
+Enter your query below.
+Please append a semicolon ";" at the end of the query
+*/
+
+SELECT employee_information.employee_ID, name
+FROM employee_information, last_quarter_bonus
+WHERE bonus >= 5000 AND employee_information.employee_ID = last_quarter_bonus.employee_ID AND employee_information.division = "HR"
